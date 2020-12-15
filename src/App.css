@@ -1,38 +1,109 @@
+:root {
+  --grey: #202026;
+  --black: #080809;
+  --blue: #192cfd;
+}
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  font-size: 10px;
+  color: var(--grey);
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  width: fit-content;
+  margin: 0.25rem auto;
+  padding: 1.5rem;
+  border-radius: 8px;
+  font-size: calc(10px + 2vmin);
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.App-header p {
+  margin-top: 0.25rem;
+}
+
+.genres {
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  margin: 0 1rem;
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: none;
+  border-radius: 25px;
+  background: #5773ff;
+
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.song button {
+  margin: 0;
+  margin-top: 0.35rem;
+  width: 5rem;
+}
+
+.songList {
+  margin: 2rem 0;
+}
+
+.songList ul {
+  list-style-type: none;
+}
+
+.song {
+  margin: 0.5rem auto;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  background: white;
+  width: 35vw;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.songLeft {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.songName {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0.25rem 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.songAuthor {
+  font-size: 0.75rem;
+}
+
+.songRating {
+  margin: 0.25rem 0;
+  font-size: 0.75rem;
+}
+
+.albumArt img {
+  height: 7.25rem;
+}
+
+.footer {
+  font-size: 0.75rem;
+}
+
+.footer a {
+  color: var(--blue);
 }
